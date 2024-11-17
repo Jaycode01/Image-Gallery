@@ -109,6 +109,11 @@ margin-top: 20px;
 .login a{
     text-decoration: none;
     color: #fff;
+    transition: color 1s ease;
+}
+
+.login a:hover{
+    color: #ccc7c7;
 }
 
 main{
@@ -123,7 +128,6 @@ main{
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
@@ -156,7 +160,39 @@ main{
 .rate{
     font-size: 15px;
 }
+
+footer{
+    margin-top: 50px;
+    padding: 30px 0px;
+    background-color: rgb(245, 242, 242);
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15%;
+}
+
+.social-icon{
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon > a{
+    font-size: 30px;
+    color: #333;
+}
+
+footer p{
+    text-align: center;
+    color: #add8e6;
+    margin-top: 20px;
+}
+
+
 /* Responsive Styles */
-@media (max-width: 768px) {
-   
+@media (max-width: 460px) {
+   .nav-links{
+    gap: 40px;
+   }
 }
