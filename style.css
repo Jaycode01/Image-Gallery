@@ -128,15 +128,34 @@ main{
 }
 
 .grid-item {
-    background-color: #333;
     color: #fff;
-    padding: 40px;
+    padding: 10px;
     text-align: center;
     border-radius: 5px;
     font-size: 1.2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.grid-item img{
+    width: 90%;
+    height: auto;
+}
+
+.bottom-side{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.bottom-side a{
+    text-decoration: none;
+    color: #333;
+}
+
+.rate{
+    font-size: 15px;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
    
