@@ -1,92 +1,143 @@
 @font-face {
-    font-family: 'montserrat';
-    src: url(./assets/font/Montserrat-Regular.woff2);
-}
-
-body{
-    font-family: 'montserrat';
+    font-family: 'Poppins';
+    src: url(./assets/font/Poppins-Regular.woff2);
 }
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-header{
+body{
+    font-family: 'Poppins';
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #fff;
+    color: #333;
+    padding: 25px 3%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 2px 2px 2px #808080;
+}
+
+.navbar-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 50px 30px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo span{
+    color: #add8e6;
 }
 
 
-.search-box > input{
-    border: 1px solid #000;
-    border-radius: 5px 0px 0px 5px;
-    padding: 10px 15px;
-    width: 300px;
-}
-
-.search-box > label{
-    margin-bottom: 10px;
-    background-color: gray;
-    padding: 10px 15px;
-    border-radius: 0px 5px 5px 0px;
-}
-
-nav{
+/* Navigation Links */
+.nav-links {
+    list-style: none;
     display: flex;
-    margin-right: 100px;
-    gap: 100px;
+    gap: 70px;
 }
 
-nav > li{
-    list-style-type: none;
+.dropdown a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
-nav > lhamburger-menu > i{
-    font-size: 25px;
+.nav-links a:hover {
+    color: #add8e6;
 }
 
-.drop-down{
+.dropdown{
     position: relative;
-    display: inline-block;
-}
-
-.drop-down > a{
-    padding: 7px 12px;
-    font-size: 16px;
-    text-decoration: none;
-    color: #000;
-    border: 1px solid gray;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.drop-down > .dropdown-content{
-    display: none;
-    position: absolute;
     margin-top: 10px;
-    padding: 30px;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
 }
 
-.drop-down > .dropdown-content > a{
-    color: black;
-    padding: 12px 16px;
+.dropdown-menu{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: #fff;
+    display: none;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px #d6d3d3;
+    opacity: 0;
+    margin: 0 auto;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu li{
+margin-top: 20px;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.login{
+    background-color: #add8e6;
+    padding: 10px 35px;
+    border-radius: 3px;
+}
+
+.login a{
     text-decoration: none;
-    display: block;
+    color: #fff;
 }
 
-.drop-down > .dropdown-content > a:hover{
-    background-color: rgb(219, 216, 216);
+main{
+    margin-top: 100px;
+}
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    max-width: 100%; 
+    width: 100%; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-item {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
     border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.drop-down:hover .dropdown-content{
-    display: block;
+/* Responsive Styles */
+@media (max-width: 768px) {
+   
 }

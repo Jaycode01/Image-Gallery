@@ -4,49 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Image Gallery | Jaycode</title>
 </head>
 <body>
     <header>
-        <div class="logo-box">
-            <img src="./assets/logo.png" alt="">
-        </div>
-        <div class="search-box">
-            <input type="search" name="search" id="searching">
-            <label for="searching"><i class="fa fa-search"></i></label>
-        </div>
-        <nav>
-            <li class="drop-down">
-                <a href="">Filter <i class="fa fa-angle-down"></i> </a>
-                <div class="dropdown-content">
-                    <a href="">All</a>
-                    <a href="">Technology</a>
-                    <a href="">Fashion</a>
-                    <a href="">Kids</a>
-                    <a href="">Sport</a>
-                    <a href="">Travel</a>
-                    <a href="">Animals</a>
-                    <a href="">3D Renders</a>
-                </div>
-            </li>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="#" class="logo"><span>Viz</span>ion</a>
 
-            <li class="hamburger-menu">
-                <i class="fa fa-bars"></i>
-            </li>
-        </nav>
-    </header>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">All<i class='bx bx-caret-down'></i></a>
+
+                   <ul class="dropdown-menu">
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Animals</a></li>
+                    <li><a href="#">Love</a></li>
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Science</a></li>
+                   </ul>
+                </li>
+                <li class="login"><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
     <main>
-        <div class="container">
-            <div class="box">
-                <img src="" alt="">
-                <div class="image-details">
-
-                </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                
             </div>
+            <div class="grid-item">Box 2</div>
+            <div class="grid-item">Box 3</div>
+            <div class="grid-item">Box 4</div>
         </div>
     </main>
-    <footer></footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
