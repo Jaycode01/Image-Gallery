@@ -121,109 +121,67 @@ main{
     margin-top: 100px;
 }
 
-.grid-container{
-    display: grid;
-    gap: 20px;
-    max-width: 100%; 
-    width: 100%; 
-    padding: 20px;
-    background-color: #fff;
+form{
+    padding: 30px;
+    box-shadow: 5px 5px 5px 5px #f0efef;
+    width: 35%;
+    margin: 10% auto;
     border-radius: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.grid-item {
-    color: #fff;
-    padding: 10px;
+form h2{
     text-align: center;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
-.grid-item img{
-    width: 90%;
-    height: auto;
+form input{
+    font-family: inherit;
+    width: 80%;
+    margin: 10px 10%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #808080;
 }
 
-.bottom-side{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-}
-
-.bottom-side a{
-    text-decoration: none;
-    color: #333;
-}
-
-#heart{
-    background-color: transparent;
-    position: relative;
-    transition: background-color 0.3s ease-in-out;
+form input.login-btn{
+    background-color: #add8e6;
     cursor: pointer;
 }
 
-#heart::before,
-#heart::after {
-    background-color: transparent;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
-    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+.continue{
+    display: flex;
+    width: 80%;
+    margin: 30px 14%;
 }
 
-#heart:hover {
-    background-color: red;
-    border: none;
+.continue p{
+    border-bottom: 1px solid #808080;
+    width: 30%;
 }
 
-#heart:hover::before,
-#heart:hover::after {
-    background-color: red;
-    border: none;
+.continue b{
+    font-weight: normal;
+    font-size: 0.9rem;
 }
 
-
-
-.rate{
-    font-size: 15px;
-}
-
-footer{
-    margin-top: 50px;
-    padding: 30px 0px;
-    background-color: rgb(245, 242, 242);
-}
-
-.footer-flex{
+.google, .github{
     display: flex;
     justify-content: space-between;
-    padding: 20px 15%;
+    width: 80%;
+    margin: 30px 10%;
+    padding: 15px 30px;
+    align-items: center;
+    background: #e4e1e1;
+    cursor: pointer;
 }
 
-.social-icon{
-    display: flex;
-    gap: 20px;
-}
+@media (max-width:768px) {
+    form{
+        width: 90%;
+        margin-top: 30%;
+    }
 
-.social-icon > a{
-    font-size: 30px;
-    color: #333;
-}
-
-footer p{
-    text-align: center;
-    color: #add8e6;
-    margin-top: 20px;
-}
-
-
-/* Responsive Styles */
-@media (max-width: 460px) {
-   .nav-links{
-    gap: 40px;
-   }
+    .continue{
+        margin: 30px 12%;
+    }
 }
