@@ -157,6 +157,36 @@ main{
     color: #333;
 }
 
+#heart{
+    background-color: transparent;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#heart::before,
+#heart::after {
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+#heart:hover {
+    background-color: red;
+    border: none;
+}
+
+#heart:hover::before,
+#heart:hover::after {
+    background-color: red;
+    border: none;
+}
+
+
+
 .rate{
     font-size: 15px;
 }
