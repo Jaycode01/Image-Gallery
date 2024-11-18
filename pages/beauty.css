@@ -115,3 +115,115 @@ margin-top: 20px;
 .login a:hover{
     color: #ccc7c7;
 }
+
+
+main{
+    margin-top: 100px;
+}
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    max-width: 100%; 
+    width: 100%; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-item {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img{
+    width: 90%;
+    height: auto;
+}
+
+.bottom-side{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.bottom-side a{
+    text-decoration: none;
+    color: #333;
+}
+
+#heart{
+    background-color: transparent;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#heart::before,
+#heart::after {
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+#heart:hover {
+    background-color: red;
+    border: none;
+}
+
+#heart:hover::before,
+#heart:hover::after {
+    background-color: red;
+    border: none;
+}
+
+
+
+.rate{
+    font-size: 15px;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 30px 0px;
+    background-color: rgb(245, 242, 242);
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15%;
+}
+
+.social-icon{
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon > a{
+    font-size: 30px;
+    color: #333;
+}
+
+footer p{
+    text-align: center;
+    color: #add8e6;
+    margin-top: 20px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 460px) {
+   .nav-links{
+    gap: 40px;
+   }
+}
