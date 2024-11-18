@@ -127,6 +127,7 @@ form{
     width: 35%;
     margin: 10% auto;
     border-radius: 10px;
+    position: relative;
 }
 
 form h2{
@@ -134,7 +135,7 @@ form h2{
     margin-bottom: 30px;
 }
 
-form input{
+form input, button{
     font-family: inherit;
     width: 80%;
     margin: 10px 10%;
@@ -143,37 +144,11 @@ form input{
     border: 1px solid #808080;
 }
 
-form input.login-btn{
+form .login-btn{
     background-color: #add8e6;
-    cursor: pointer;
 }
 
-.continue{
-    display: flex;
-    width: 80%;
-    margin: 30px 14%;
-}
 
-.continue p{
-    border-bottom: 1px solid #808080;
-    width: 30%;
-}
-
-.continue b{
-    font-weight: normal;
-    font-size: 0.9rem;
-}
-
-.google, .github{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 30px 10%;
-    padding: 15px 30px;
-    align-items: center;
-    background: #e4e1e1;
-    cursor: pointer;
-}
 
 @media (max-width:768px) {
     form{

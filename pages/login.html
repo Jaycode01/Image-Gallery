@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="login.css">
     <title>Vizion | Login</title>
 </head>
@@ -28,7 +30,7 @@
                         <li><a href="./science.html">Science</a></li>
                        </ul>
                     </li>
-                    <li class="login"><a href="#">Login</a></li>
+                    <li class="login"><a href="#">Sign Up</a></li>
                 </ul>
             </div>
         </nav>
@@ -36,32 +38,21 @@
 
     <main>
         <form action="">
-            <h2>Login to Vizion</h2>
-            <input type="email" name="" id="" placeholder="Email">
+            <h2>Sign Up to Vizion</h2>
+            <input type="text" name="" id=""placeholder="First Name" required>
             <br>
-            <input type="password" name="" id="" placeholder="Password">
+            <input type="text" name="" id=""placeholder="Second Name" required>
             <br>
-            <input type="button" value="Login" class="login-btn">
-
-            <div class="continue">
-                <p></p>
-                    <b>continue with</b>
-                <p></p>
-            </div>
-
-
-            <div class="google">
-                <i class='bx bxl-google'></i>
-                <p>Login with google</p>
-                <p><i class='bx bx-chevrons-right'></i></p>
-            </div>
-
-            <div class="github">
-                <i class='bx bxl-github'></i>
-                <p>Login with google</p>
-                <p><i class='bx bx-chevrons-right'></i></p>
-            </div>
+            <input type="email" name="" id="" placeholder="Email" required>
+            <br>
+            <input type="password" name="" id="" placeholder="Password" required>
+            <br>
+            <input type="password" placeholder="Confirm Password" required>
+            <br>
+            <button type="button" onclick="displayPopUp()" class="login-btn" id="Login">Sign Up</button>
         </form>
     </main>
+
+    <script src="../script.js"></script>
 </body>
 </html>
